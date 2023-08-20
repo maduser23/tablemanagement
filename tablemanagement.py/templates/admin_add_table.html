@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: #238356;
+            font-family: "Poppins";
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width:60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ccc;
+            margin-top:10vh;
+            margin-left:10px;
+            border-radius:10px;
+            justify-content:center;
+            align-items:center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 15px;
+            font-size: 16px;
+            background-color: #238356;
+            color: #ccc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Add Table</h1>
+    <form action='/add_tables' method="post">
+        <label for="block_name">Add Number of Seats</label>
+        <input type="text" id="block_name" name="block_name">
+        <input type="submit" value="Add">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <title>XYZ Restaurant</title>
+  <style>
+    body {
+      background-color:#238356;
+      font-family:"Poppins";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      width:40%;
+      background-color: #ccc;
+      opacity:100%;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-family: "Poppins";
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      font-family: "Poppins";
+      background-color: #238356;
+      color: #ffffffba;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .form-group button:hover {
+      background-color: #42c7d6ba;
+      font-family:"Poppins";
+    }
+
+    .form-group p {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <h1>Welcome to XYZ Restaurant</h1>
+    <h2>Admin Login Page</h2>
+    <div class="form-group">
+      <label for="username">Admin ID:</label>
+      <input type="text" id="username" placeholder="Enter ADMIN ID">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <div class="form-group">
+      <a href="display_tables.html"><button type="submit">Login</button></a>
+    </div>
+    <p>Don't have an account? <a href="admin_sign_up.html">Sign up</a></p>
+    <p>Forgot Password <a href="forget page.html">Click Here</a></p>
+  </div>
+</body>
+</html>

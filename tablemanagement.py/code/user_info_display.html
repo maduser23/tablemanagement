@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<head>
+    <title>User Information</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family:"Poppins";
+            background-color: #238356;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            width:60%;
+            margin-top:10vh;
+            margin-left:10px;
+            margin: 0 auto;
+            background-color: #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .info-item label {
+            width: 150px;
+            font-weight: bold;
+        }
+        
+        .info-item span {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Information</h1>
+        
+        <div class="info-item">
+            <label>Name:</label>
+            <span>{{ name }}</span>
+        </div>
+        
+        <div class="info-item">
+            <label>Email ID:</label>
+            <span>{{ email }}</span>
+        </div>
+        
+        <div class="info-item">
+            <label>Date of Reservation:</label>
+            <span>{{ date }}</span>
+        </div>
+        
+        <div class="info-item">
+            <label>Time of Reservation:</label>
+            <span>{{ time }}</span>
+        </div>
+        
+        <div class="info-item">
+            <label>Seater Status:</label>
+            <span>{{ seater_status }}</span>
+        </div>
+    </div>
+</body>
+</html>
